@@ -4,7 +4,7 @@
 
 /*------Variables Css------*/
 :root{
-  --header-height: 3 rem;
+  --header-height: 3rem;
   --font-medium: 500;
 }
 
@@ -106,7 +106,7 @@ img{
 
 /*------Layout------*/
 .bd-grid{
-  max-width:1024px;
+  
   display:grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
@@ -121,7 +121,7 @@ img{
   left: 0;
   z-index: var(--z-fixed);
   background-color: var(--first-color);
-
+  
 }
 
 /*------Nav------*/
@@ -169,7 +169,7 @@ img{
 }
 
 /*------Active Menu------*/
-.active::after{
+/*.active::after{
   position: absolute;
   content: "";
   width: 100%;
@@ -177,7 +177,7 @@ img{
   left: 0;
   top: 2rem;
   background-color: var(--first-color);
-}
+}*/
 
 /*------Home------*/
 .home{
@@ -186,9 +186,11 @@ img{
   overflow:hidden;
 }
 .home_container{
-  height: calc(500vh - var(--header-height));
+  height: 100vh;
+  /*height: calc( 100vh - var(--header-height));*/
+  /*need to be fixed*/
   row-gap: 5rem;
-  margin-top:50px;/*temporary added*/
+  /*margin-top:40px;/*temporary added*/
 }
 .home_title{
   align-self: flex-end;
@@ -373,4 +375,99 @@ img{
 }
 .footer_social:hover{
   color:var(--first-color);
+}
+@media screen and (min-width: 768px){
+  body{
+    margin:0;
+  }
+  .section{
+    padding-top: 4rem;
+  }
+  .section-title{
+    margin-bottom: 3rem;
+  }
+  .section-title::after{
+    width: 64px;
+    top: 3rem;
+  }
+  .nav{
+    height:calc(var(--header-height) + 1rem);
+  }
+  .nav_list{
+    display: flex;
+  }
+  .nav_item{
+    margin-left: var(--mb-4);
+    margin-bottom: 0;
+  }
+  .nav_toggle{
+    display: none;
+  }
+  .nav_link{
+    color: var(--white-color);
+  }
+  .nav_link:hover{
+    color:var(--white-color);
+  }
+
+  .active::after{
+    background-color: var(--white-color);
+  }
+  .home_container{
+    height:100vh;
+    grid-template-rows: 1.7fr 1fr;
+    row-gap:0;
+  }
+  .home_img{
+    width: 524px;
+    right: 10%;
+  }
+  .about_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+    text-align: initial;
+    padding:4rem 0;
+
+  }
+  .about_img{
+    margin:auto;
+    width: 200px;
+    height: 200px;
+  }
+  .about_img img{
+    text-align: center;
+  }
+  .skills_container{
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin:auto;
+  }
+  
+  .portfolio_container{
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+
+  .contact_container{
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .contact_form{
+    width:380px;
+  }
+ 
+  .footer_container{
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  /*center grid/container for big screens*/
+  .bd-grid{
+    margin-left:auto;
+    margin-right: auto;
+  }
 }

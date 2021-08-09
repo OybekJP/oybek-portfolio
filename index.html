@@ -9,6 +9,9 @@
   <!--Box Icons-->
   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
   <title>OybekDev Porfolio</title>
+  <!--Main JS-->
+  <script src="script.js" defer></script>
+  <script src="https://unpkg.com/scrollreveal"></script> 
 </head>
 <body>
   <!-------Header------>
@@ -21,7 +24,7 @@
       <div class="nav_menu" id="nav-menu">
         <ul class="nav_list">
           <li class="nav_item"><a href="#home" class="nav_link active">Home</a></li>
-          <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+          <li class="nav_item"><a href="#about" class="nav_link ">About</a></li>
           <li class="nav_item"><a href="#skills" class="nav_link">Skills</a></li>
           <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
           <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
@@ -66,7 +69,7 @@
         </div>
       </div>
     </section>
-    <!-------Scroll Reveal------>
+    <!-------Skills------>
     <section class="skills section" id="skills">
       <h2 class="section-title">Skills</h2>
       <div class="skills_container bd-grid">
@@ -137,18 +140,19 @@
           <h3 class="contact_subtitle">Address</h3>
           <span class="contact_text">Tokyo, Japan</span>         
         </div>
+        
+        <form action="" class="contact_form">
+          <div class="contact_inputs">
+            <input type="text" placeholder="Name" class="contact_input">
+            <input type="mail" placeholder="Email" class="contact_input">
+          </div>
+          <textarea name="" id="" cols="0" rows="10" class="contact_input" value="Your message"> </textarea>
+          <input type="submit" value="Submit" class="contact_button">
+        </form>
       </div>
-      <form action="" class="contact_form">
-        <div class="contact_inputs">
-          <input type="text" placeholder="Name" class="contact_input">
-          <input type="mail" placeholder="Email" class="contact_input">
-        </div>
-        <textarea name="" id="" cols="0" rows="10" class="contact_input" value="Your message"> </textarea>
-        <input type="submit" value="Submit" class="contact_button">
-      </form>
     </section>
     
-    <!-------Scroll Reveal------>
+    <!-------Footer------>
     <footer class="footer section">
       <div class="footer_container bd-grid">
         <div class="footer_data">
@@ -174,26 +178,8 @@
         </div>
       </div>
     </footer>
-    
-    
-    <!-------Scroll Reveal------>
-
-
-
-    
-
-
-
   </main>
   
   <!-------Scroll Reveal------>
-  <script src="https://unpkg.com/scrollreveal"></script>  
-  <!--Main JS-->
-  <script src="script.js"></script>
-
-  <!-------Header------>
-  <!-------Header------>
-  <!-------Header------>
-  <!-------Header------>
 </body>
 </html>
