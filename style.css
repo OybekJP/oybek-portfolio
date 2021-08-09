@@ -186,9 +186,7 @@ img{
   overflow:hidden;
 }
 .home_container{
-  height: 100vh;
-  /*height: calc( 100vh - var(--header-height));*/
-  /*need to be fixed*/
+  height: calc(100vh - var(--header-height));
   row-gap: 5rem;
   /*margin-top:40px;/*temporary added*/
 }
