@@ -27,7 +27,8 @@ const sr = ScrollReveal({
   origin: 'top',
   distance: '1rem',/*don't use px. They created margin-right and open space*/
   duration: 1000,
-  reset: true,
+  //determines if animation should run everytime user scrolls
+  reset: false,
 })
 
 /*--------Scroll Home------ */
@@ -58,3 +59,28 @@ sr.reveal('.contact_button', {origin:'right', delay:50 })
 
 
 /*--------Dark mode------ */
+//select page elements
+
+const sun = document.querySelector("#sun");
+const moon = document.querySelector("#moon");
+//get the root to set its variables
+const root = document.querySelector(":root");
+
+//switch to dark mode when moon is clicked
+moon.addEventListener('click', function(){
+  sun.style.display = "inherit";
+  moon.style.display = "none";
+  root.style.setProperty("--white-color", "#BBE1FA");
+  root.style.setProperty("--first-color", "#0F4C75");
+  root.style.setProperty("--dark-color", "#1B262C");
+})
+
+//switch to light mode when sun is clicked
+sun.addEventListener("click", ()=>{
+  sun.style.display = "none";
+  moon.style.display = "inherit";
+  root.style.setProperty("--white-color", "#FAFAFF");
+  root.style.setProperty("--first-color", "#5361FF");
+  root.style.setProperty("--dark-color", "#2A3B47");
+})
+

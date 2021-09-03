@@ -61,6 +61,7 @@ body{
   font-weight: var(--font-medium);
   color: var(--text-color);
   line-height: 1.6;
+  background-color: var(--white-color);
 }
 h1, h2, p{
   margin: 0;
@@ -143,6 +144,11 @@ img{
     transition: .5s;
     backdrop-filter: blur(10px);
   }
+  #sun, #moon{
+    position: relative;
+    left: -10vw;
+    color:
+  }
 }
 .nav_item{
   margin-bottom: var(--mb-4);
@@ -163,21 +169,31 @@ img{
   cursor: pointer;
 }
 
+/*------Dark mode toggle------*/
+#dark-mode{
+  position:relative;
+  right: -10vw;
+  z-index: 100;
+  width: 2rem;
+  height: 2rem;
+  fill-rule:lavender;
+  display: none;
+}
+#sun, #moon{
+  color: white;
+  font-size: 1.5rem;
+  position:relative;
+  right: -10vw;
+  cursor: pointer;
+}
+#sun{
+  color: rgb(255, 195, 65);
+  display: none;
+}
 /*------SHow Menu------*/
 .show {
   right: 0;
 }
-
-/*------Active Menu------*/
-/*.active::after{
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: .18rem;
-  left: 0;
-  top: 2rem;
-  background-color: var(--first-color);
-}*/
 
 /*------Home------*/
 .home{
@@ -188,8 +204,7 @@ img{
 .home_container{
   height: calc(100vh - var(--header-height));
   row-gap: 5rem;
-  /*margin-top:40px;/*temporary added*/
-}
+ }
 .home_title{
   align-self: flex-end;
   font-size: var(--big-font-size);
