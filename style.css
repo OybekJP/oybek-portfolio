@@ -107,13 +107,17 @@ img{
 
 /*------Layout------*/
 .bd-grid{
-  
   display:grid;
   grid-template-columns: 100%;
   grid-column-gap: 2rem;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
+}
+/*fixing a bug, align skills section to the center*/
+.bd-grid:not(.contact_container, .home_container){
+  justify-items: center;
+  
 }
 .l-header{
   width: 100%;
@@ -190,6 +194,7 @@ img{
   color: rgb(255, 195, 65);
   display: none;
 }
+
 /*------SHow Menu------*/
 .show {
   right: 0;
@@ -389,7 +394,7 @@ img{
   color:var(--first-color);
 }
 .footer_social{
-  font-size: 1.4rem;
+  font-size: 2rem;
 }
 .footer_social:hover{
   color:var(--first-color);
