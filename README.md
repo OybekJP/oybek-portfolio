@@ -19,10 +19,9 @@ List of features
 * Scroll Reveal animation that only runs once  
 
 ## Screenshot
-![mobile first page](https://raw.githubusercontent.com/OybekJP/disney-plus/main/media/Disney%2B%20gif.gif)
-![mobile result page](https://raw.githubusercontent.com/OybekJP/disney-plus/main/media/full%20landing%20page.png)
-![wrong inut error display](https://raw.githubusercontent.com/OybekJP/disney-plus/main/media/mobiel%20fullscreen.png)
-![web result page](https://raw.githubusercontent.com/OybekJP/disney-plus/main/media/mobile%20version.png)
+![mobile first page](https://raw.githubusercontent.com/OybekJP/oybekdev/main/media/mobile%20screenshot.png)
+
+![desktop result page](https://raw.githubusercontent.com/OybekJP/oybekdev/main/media/desktop%20screenshot.png)
 
 To-do list:
 * Add more dream projects
