@@ -238,13 +238,14 @@ img{
 }
 .about_text{
   margin-bottom: var(--mb-4);
+  text-align:justify;
 }
 .about_profession{
   display:block;
   margin-bottom: var(--mb-4);
 }
 .about_social-icon{
-  font-size: 1.4rem;
+  font-size: 2.4rem;
   margin: 0 var(--mb-1);
 }
 .about_social-icon:hover{
@@ -259,7 +260,7 @@ img{
   color: var(--first-color);
   margin-bottom: var(--mb-3);
 }
-.skills_name{
+.skills_name, .portfolio-links a{
   display: inline-block;
   font-size:var(--small-font-size);
   margin-right: var(--mb-2);
@@ -268,7 +269,7 @@ img{
   background-color: var(--white-color);
   border-radius: .25rem;
 }
-.skills_name:hover{
+.skills_name:hover, .portfolio-links a:hover{
   background-color:var(--first-color);
   color: var(--white-color);
 }
@@ -297,9 +298,10 @@ img{
   width: 100%;
   height:100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, .5);
   border-radius: .5rem;
   cursor: pointer;
   backdrop-filter: blur(10px);
@@ -310,6 +312,9 @@ img{
 }
 .portfolio_link-name{
   color: var(--dark-color);
+}
+.portfolio-links a{
+  font-size: large;
 }
 
 /*------Contact------*/
