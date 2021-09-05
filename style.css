@@ -148,6 +148,7 @@ img{
     transition: .5s;
     backdrop-filter: blur(10px);
   }
+  /*center dark/light mode icons in mobile*/
   #sun, #moon{
     position: relative;
     left: -10vw;
