@@ -196,14 +196,16 @@
           <span class="contact_text">Tokyo, Japan</span>         
         </div>
         
-       <!-- <form action="" class="contact_form">
+       <form action="POST" data-netlify="true" class="contact_form">
           <div class="contact_inputs">
-            <input type="text" placeholder="Name" class="contact_input">
-            <input type="mail" placeholder="Email" class="contact_input">
+            <input type="text" name="name" placeholder="Name" class="contact_input">
+            <input type="mail" name="email" placeholder="Email" class="contact_input">
           </div>
-          <textarea name="" id="" cols="0" rows="10" class="contact_input" value="Your message"> </textarea>
+          <textarea name="message" id="message" cols="0" rows="10" class="contact_input" value="Your message"> </textarea>
+          <div data-netlify-recaptcha="true">yoyo
+          </div>
           <input type="submit" value="Submit" class="contact_button">
-        </form>-->
+        </form>
       </div>
     </section>
     
@@ -238,11 +240,7 @@
 
   <!--fture features:
     practise adding toggle navbar
-    dark mode
-    add actual links
-    add actual projects
     fix active nav border
-
   -->
 </body>
 </html>
