@@ -10,5 +10,4 @@ See it live [from here](https://oybek-portfolio.me/).
 - Trello clone. [GitHub](https://github.com/OybekJP/trelloclone) - [LIVE](https://trello-webapp.netlify.app/)
 - My Tenki: weather forecast app. [GitHub](https://github.com/OybekJP/mytenki) - [LIVE](https://mytenki.netlify.app/)
 - Dinsey + landing page. [GitHub](https://github.com/OybekJP/disney-plus) - [LIVE](https://disneypluslp.netlify.app/)
-- My budget: 
 - and more ...
