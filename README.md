@@ -1,34 +1,14 @@
-# Responsive personal portfolio page
+# Personal portfolio page - [see LIVE](https://oybek-portfolio.me/).
 
-This is my portfolio page that I created to give an information about me and list my portfolio projects.
+This is my portfolio page that I created to give an information about me and list my projects.
 
-## General info
+See it live [from here](https://oybek-portfolio.me/).
 
-It is fully responsive, includes dark/light mode functionality, and makes use of ScrollReveal library to screate animations.
+## My Projects
 
-See it live [from here](https://oybekjp.github.io/oybek-portfolio/).
-
-## Technologies
-
-- HTML
-- CSS: flexbox, grid, etc.
-- JavaScript: dark/light mode, toggle navbar.
-- ScrollReveal animation library
-
-## Features
-
-List of features
-
-- Responsive for desktop, tablets and mobile phones
-- Dark mode for night owls
-- Scroll Reveal animation that only runs once
-
-## Screenshot
-
-![mobile first page](https://raw.githubusercontent.com/OybekJP/oybekdev/main/media/mobile%20screenshot.png)
-
-![desktop result page](https://raw.githubusercontent.com/OybekJP/oybekdev/main/media/desktop%20screenshot.png)
-
-To-do list:
-
-- Add more dream projects
+- Amazon clone. [GitHub](https://github.com/OybekJP/amazonstore) - [LIVE](https://amazon-oybek.vercel.app/) 
+- Trello clone. [GitHub](https://github.com/OybekJP/trelloclone) - [LIVE](https://trello-webapp.netlify.app/)
+- My Tenki: weather forecast app. [GitHub](https://github.com/OybekJP/mytenki) - [LIVE](https://mytenki.netlify.app/)
+- Dinsey + landing page. [GitHub](https://github.com/OybekJP/disney-plus) - [LIVE](https://disneypluslp.netlify.app/)
+- My budget: 
+- and more ...
